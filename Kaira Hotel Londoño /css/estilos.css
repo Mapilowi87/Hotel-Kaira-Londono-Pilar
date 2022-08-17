@@ -1,0 +1,842 @@
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #5AE692;
+    background-image: linear-gradient(to right    top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+}
+
+.header {
+    height: 200px;
+    width: auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    padding: 20px;
+    background-image: url(../img/pagina\ principal.png);
+    background-attachment: fixed;
+    padding: 20px;
+    margin: 0% auto;
+    border: 5px solid;
+    
+}
+
+.logo{
+    color: #5AA0E6;
+    float: left;
+}
+
+.logo:hover{
+    transform: scale(1.3);
+    transition: all 0.5s;
+}
+
+.logo span{
+    color: #5ae692;
+}
+
+.barra{
+    
+    font-size: 10px;
+    font-weight: 200;
+
+}
+.barra ul {
+    font-size: 5px;
+    align-items: left;
+    text-transform: capitalize;
+
+}
+
+
+.barra li{
+    list-style: none;
+    display: inline-block;
+    font-size: 10px;
+    
+}
+
+.barra a{
+    text-decoration: none;
+    color:#000
+}
+
+.barra a:hover{
+    color: aliceblue;
+}
+
+.header-uno{
+    height: 200px;
+    width:auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    padding: 10px;
+    background-image: url(../img/istockphoto-1158377050-612x612.jpg);
+    background-attachment: fixed;
+    background-size: auto;
+    padding: 20px;
+    margin: 0% auto;
+    border: 5px solid;
+}
+
+.header-dos{
+    height: 200px;
+    width:auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    padding: 10px;
+    background-image: url(../img/pagina\ quienes\ somos.png);
+    background-attachment: fixed;
+    background-size: auto;
+    padding: 20px;
+    margin: 0% auto;
+    border: 5px solid;
+}
+.header-tres{
+    height: 200px;
+    width:auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    padding: 10px;
+    background-image: url(../img/contacto.png);
+    background-attachment: fixed;
+    background-size: auto;
+    padding: 20px;
+    margin: 0% auto;
+    border: 5px solid;
+}
+
+.header-cuatro{ 
+    height: 200px;
+    width:auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    padding: 20px;
+    background-image: url(../img/pagina\ hotel.png);
+    background-attachment: fixed;
+    background-size: auto;
+    padding: 20px;
+    margin: 0% auto;
+    border: 5px solid;
+}
+
+.logo{
+    color: #5AA0E6;
+    float: left;
+}
+
+.logo:hover{
+    transform: scale(1.3);
+    transition: all 0.5s;
+}
+
+.logo span{
+    color: #5ae692;
+}
+
+.barra{
+    
+    font-size: 80px;
+    font-weight: 200;
+    display: flex;
+    flex-direction:column ;
+    align-items: center;
+    gap: 30px;
+    
+
+}
+.barra li{
+    list-style: none;
+    display: inline-block;
+    font-size: 25px;
+    position: relative;
+    
+}
+
+.barra a{
+    text-decoration: none;
+    color:#000
+
+}
+
+.barra a:hover{
+    color: aliceblue;
+}
+
+.contenedor{
+    height: 200px;
+    width: auto;
+    border:1px solid;
+    display: grid;
+    padding: 10px;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 180px;
+    
+
+}
+
+.baul{
+    background-color: #30B5E3;
+    border: 1px solid rgb(9, 128, 0);
+    
+}
+.baul1{
+    background-image: url(../img/sierra.jpg);
+    background-size: cover;
+    background-position: center;
+
+}
+.baul2{
+    background-image: url(../img/portada.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.baul3{
+    background-image: url(../img/vista\ completa.png);
+    background-size: cover;
+    background-position: center;
+}
+.baul4{
+    background-image: url(../img/cabaña.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.caja-1{
+    text-align: center;
+    color: #051937;
+    text-shadow: 5px 5px 5px rgb(101, 159, 235);
+    animation-duration: 2s;
+    animation-name: aparecer;
+    animation-delay: 10s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+@keyframes aparecer {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.call{
+    text-align: justify;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    text-align:justify;
+    padding: 10px;
+
+}
+
+.table{
+    border-radius: 3px;
+    border-color: rgb(36, 61, 170);
+    text-align: center;
+    padding: 10px;
+}
+
+.linea{
+    text-align: center;
+    font-size: 20px;
+    text-shadow:5px 5px 5px #efeff4;
+    text-transform:uppercase
+}
+
+.contenido{
+    border-color: rgb(1, 42, 1);
+    border: 2px solid;
+    
+}
+
+p{
+    padding: 10px;
+}
+
+h2{
+    color: rgb(61, 135, 88);
+    text-align: center;font-size: 30px; color: rgb(61, 135, 88);
+    text-align: center;font-size: 30px;
+}
+
+h3{
+    text-align: center;
+    font-size: 20px;
+}
+
+p{
+    background-color: #5cc0ff;font-size: 20px;
+    border: 2px solid;
+}
+    
+.border{
+    border: 2px solid #000;
+    border-color: darkslategrey;
+    border-radius: 7px;
+    margin: 10px;
+    padding: 10px;
+}
+.productos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+.Parque{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+
+}
+
+.dos{
+    height: 300px;
+    width: 300px;
+    background-color: #5AA0E6;
+    border: 3px solid #5ae692;
+    text-align: center;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: aliceblue;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 200px;
+}
+
+.archivo {
+    height: 200px;
+    width: 200px;
+    background-image: url(../img/mision\ .png);
+    border: 3px solid #5ae692;
+    text-align: center;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: aliceblue;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 200px;
+}
+
+.item{
+    height: 300px;
+    width: 300px;
+    background-color: #5AA0E6;
+    border: 3px solid #5ae692;
+    text-align: center;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: aliceblue;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 200px;
+}
+
+.item1{
+    background-image: url(../img/jabon\ olivia.jpg);
+    width: 300px ;
+    border-width: 3px;
+    border-color: darkgreen;
+    border-style: solid;
+    background-size: cover;
+    background-position: center;
+    
+}
+
+.item2{
+    background-image: url(../img/jabones\ hotel.jpg);
+    width: 300px ;
+    border-width: 3px;
+    border-color: darkgreen;
+    border-style: solid;
+    order: 2;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.item3{
+    background-image: url(../img/aceite\ hotel\ .jpg);
+    width: 300px ;
+    border-width: 3px;
+    border-color: darkgreen;
+    border-style: solid;
+    order: 1;
+    background-size: cover;
+    background-position: center;
+}
+
+.contenedor-figura{
+    height: auto;
+    width: 100%;
+    background-color: #5ae692;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 200px 200px;
+    grid-template-areas: "img1 img2 img3"
+                        "img4 img5 img6";
+                        grid: gap 10px;
+                        padding: 20px;;
+}
+
+.contenedor-nosotros{
+    height: auto;
+    width: 100%;
+    background-color: #5ae692;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 200px 200px;
+    grid-template-areas: "img1 img2 img3"
+                        "img4 img5 img6";
+                        grid: gap 10px;
+                        padding: 20px;;
+}
+
+.contenedor{
+    border: 1px solid #000;
+    border: radius 5px solid #000;
+    height: 200px;
+    width: 200px;
+    width: 100%;
+    background-color: dimgrey;
+}
+
+.contenedor1{
+    grid-area: img1;
+    background-image: url(../img/Nosotros.png);
+    background-size: cover;
+    background-position: center;
+    color: antiquewhite;
+    
+
+}
+
+.contenedor2{
+    grid-area: img2;
+    background-image: url(../img/nosotros1.jpg);
+    background-size: cover;
+    background-position: center;
+
+}
+
+.contenedor3{
+    grid-area: img3;
+    background-image: url(../img/nosotros3.jpg);
+    background-size: cover;
+    background-position: center;
+
+}
+
+.contenedor4{
+    grid-area: img4;
+    background-image: url(../img/nosotros4.png);
+    background-size: cover;
+    background-position: center;
+
+}
+.contenedor5{
+    grid-area: img5;
+    background-image: url(../img/nosotros5.png);
+    background-size: cover;
+    background-position: center;
+
+}
+.contenedor6{
+    grid-area: img6;
+    background-image: url(../img/nosotros\ dos\ .png);
+    background-size: cover;
+    background-position: center;
+
+}
+
+.figura{
+    border: 1px solid #000;
+    border: radius 5px solid #000;
+    height: 200px;
+    width: 200px;
+    width: 100%;
+    background-color: dimgrey;
+}
+
+.figura1{
+    grid-area: img1;
+    background-image: url(../img/playa\ los\ naranjos.png);
+    background-size: cover;
+    background-position: center;
+    color: antiquewhite;
+    
+
+}
+
+.figura2{
+    grid-area: img2;
+    background-image: url(../img/galeria2.png);
+    background-size: cover;
+    background-position: center;
+
+}
+
+.figura3{
+    grid-area: img3;
+    background-image: url(../img/galeria3.png);
+    background-size: cover;
+    background-position: center;
+
+}
+
+.figura4{
+    grid-area: img4;
+    background-image: url(../img/cabo\ san\ juan\ .png);
+    background-size: cover;
+    background-position: center;
+
+}
+.figura5{
+    grid-area: img5;
+    background-image: url(../img/galeria\ 5.png);
+    background-size: cover;
+    background-position: center;
+
+}
+.figura6{
+    grid-area: img6;
+    background-image: url(../img/hamacas.png);
+    background-size: cover;
+    background-position: center;
+
+}
+
+
+
+img {
+    width: 250px;
+    border-width: 2px;
+    border-color: darkolivegreen;
+    border-style: dashed;
+}
+footer{
+    background-color:#5DF0C1;
+    text-align: center;
+    font-size: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+
+footer i{
+    color: rgb(22, 186, 41);
+    letter-spacing: 10px;
+}
+footer p{
+    margin: 10px;
+}
+.subir{
+    height: 40px;
+    width: 40px;
+    background-color: rgb(25, 12, 121);
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    text-align: center;
+    line-height: 40px;
+    color: azure;
+    border-radius: 50px;
+    border: 2px solid rgb(7, 7, 7);
+    font-size: 22px;
+
+}
+
+.somos{
+    font: size 20px;;
+    color: #000;
+    
+}
+.enfasis{
+    color: #000;
+    text-align: left;
+    font-size: 16px;
+    border-radius: 7px;
+}
+
+.contenedor-mision{
+    height: 200px;
+    width: auto;
+    border: 2px solid cornflowerblue;
+    display: grid;
+    padding: 5px;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 180px;
+    padding: 10px;
+    margin: 5px;
+}
+
+.mision{
+    background-color: cornflowerblue;
+    border: 1px solid rgb(180, 189, 180);
+
+}
+.mision1{
+    background-image: url(../img/mision\ .png);
+    background-size: cover;
+    background-position: center;
+    border: 3px solid black;
+}
+
+.mision2{
+    background-image: url(../img/mision\ 2.png);
+    background-size: cover;
+    background-position: center;
+    border: 3px solid black;
+}
+
+.mision3{
+    background-image: url(../img/mision\ 3.png);
+    background-size: cover;
+    background-position: center;
+    border: 3px solid black;
+}
+
+.contacto{
+    font-size: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: right;
+
+}
+.final{
+    font-size: 16px;
+    color: #000;
+    font-weight: normal;
+    padding: 10px;
+}
+.definido{
+    font-size: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 5px;
+}
+.medida{
+    font-size: 40px;
+}
+.informativo{
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-bottom: #5ae692;
+    border: 2px solid;
+    background-color: darkslategrey;
+
+}
+.posicion{
+    text-align: left;
+    font-size: 30px;
+    color: #000;
+}
+.final{
+    text-align: justify;
+    font-size: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.inicio{
+    font-size: 30px;
+    color: #000;
+    text-align: left;
+}
+.centrar{
+    text-align: left;
+    text-transform: uppercase;
+    color: rgb(1, 42, 1);
+    font-size: 16px;
+
+}
+
+.centrar:hover{
+    transform: scale(1.3);
+    transition: all 2s;
+}
+
+.cajita{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+.item-cajita{
+    height: 250px;
+    width: 250px;
+    background-color: #5AA0E6;
+    border: 3px solid #5ae692;
+    text-align: center;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: aliceblue;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 200px;
+}
+.numero1{
+    background-image: url(../img/Habitacion\ vista\ al\ Mar.png);
+    width: 250px ;
+    border-width: 3px;
+    border-color: darkgreen;
+    border-style: solid;
+    background-size: cover;
+    background-position: center;
+}
+.numero2{
+    background-image: url(../img/vista\ al\ mar\ 2.png);
+    width: 250px ;
+    border-width: 3px;
+    border-color: darkgreen;
+    border-style: solid;
+    background-size: cover;
+    background-position: center;
+}
+.numero3{
+    background-image: url(../img/vista\ al\ mar\ 3.png);
+    width: 250px ;
+    border-width: 3px;
+    border-color: darkgreen;
+    border-style: solid;
+    background-size: cover;
+    background-position: center;
+}
+
+.cajon{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+.item-cajon{
+    height: 250px;
+    width: 250px;
+    background-color: #5AA0E6;
+    border: 3px solid #5ae692;
+    text-align: center;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: aliceblue;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 200px;
+}
+.numero4{
+    background-image: url(../img/Habitacion\ Deluxe.png);
+    width: 250px ;
+    border-width: 3px;
+    border-color: darkgreen;
+    border-style: solid;
+    background-size: cover;
+    background-position: center;
+}
+.numero5{
+    background-image: url(../img/Deluxe2.png);
+    width: 250px ;
+    border-width: 3px;
+    border-color: darkgreen;
+    border-style: solid;
+    background-size: cover;
+    background-position: center;
+}
+.numero6{
+    background-image: url(../img/Deluxe\ 3.png);
+    width: 250px ;
+    border-width: 3px;
+    border-color: darkgreen;
+    border-style: solid;
+    background-size: cover;
+    background-position: center;
+}
+.punto{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    
+
+}
+
+.item-raya{
+    height: 250px;
+    width: 250px;
+    background-color: #5AA0E6;
+    border: 3px solid #5ae692;
+    text-align: center;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: aliceblue;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 200px;
+}
+.numero7{
+    background-image: url(../img/Habitacion\ Planta\ Baja.png);
+    width: 250px ;
+    border-width: 3px;
+    border-color: darkgreen;
+    border-style: solid;
+    background-size: cover;
+    background-position: center;
+}
+.numero8{
+    background-image: url(../img/Planta\ baja\ 2.png);
+    width: 250px ;
+    border-width: 3px;
+    border-color: darkgreen;
+    border-style: solid;
+    background-size: cover;
+    background-position: center;
+}
+.numero9{
+    background-image: url(../img/Planta\ baja\ 3.png);
+    width: 250px ;
+    border-width: 3px;
+    border-color: darkgreen;
+    border-style: solid;
+    background-size: cover;
+    background-position: center;
+}
+.contenedor-vision{
+    height: 200px;
+    width: auto;
+    border: 2px solid;
+    display: grid;
+    padding: 5px;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 180px;
+    padding: 10px;
+    margin: 5px;
+
+}
+
+.vision{
+    background-color: cornflowerblue;
+    border: 2px solid rgb(9, 128, 0);
+    
+}
+.vision1{
+    background-image: url(../img/vision\ uno.png);
+    background-size: cover;
+    background-position: center;
+    border: 3px solid black;
+
+}
+.vision2{
+    background-image: url(../img/vision\ dos\ .png);
+    background-size: cover;
+    background-position: center;
+    border: 3px solid black;
+}
+.vision3{
+    background-image: url(../img/vision\ 4.png);
+    background-size: cover;
+    background-position: center;
+    border: 3px solid black;
+}
+
+.vision4{
+    background-image: url(../img/vision\ 3.png);
+    background-size: cover;
+    background-position: center;
+    border: 3px solid black;
+}
+p ::selection{
+    color:rgb(13, 4, 117);
+    background-color: #008793;
+}
