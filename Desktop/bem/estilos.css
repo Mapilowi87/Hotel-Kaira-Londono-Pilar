@@ -1,0 +1,15 @@
+.encabezado{
+    height: 150px;
+    width: 100px;
+    background-color: blue;
+}
+.encabezado--bgcolor{
+    background-color: blueviolet;
+}
+.encabezado__barra{
+    height: 100px;
+    background-color: brown;
+}
+.encabezado__barra--fsixe{
+    font-size: 60px;
+}
