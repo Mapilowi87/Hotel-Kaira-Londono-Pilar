@@ -8,6 +8,7 @@
     <link rel="shortcut icon" href="../img/logo.jpg" type="image/x-icon">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/estilos.css">
     <style>  
         
@@ -15,28 +16,57 @@
     <title>Hotel Kaira</title>
 </head>
 <body>
-    <header class="header-dos">
-        <div class="logo">Hotel <span>Kaira</span></div>
-            <nav class="barra">
-        <ul>
-            <li> <a href="../index.html">Home</a></li>
-            <li><a href="#">Quienes Somos</a></li>
-            <li><a href="./hotel.html">Hotel</a></li>
-            <li><a href="./sostenibilidad.html">Sostenibilidad</a></li>
-            <li><a href="./contacto.html">Contacto</a></li>
-        </ul>
+    <!--navbar inicia -->
+    <nav class="navbar navbar-expand-lg navbar-dark hknav">
+        <!-- Brand -->
+        <a class="navbar-brand" href="#"><div class="logo">Hotel <span>Kaira</span></div>
+        </a>
+        <!-- Toggler/collapsibe Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Navbar links -->
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="../index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Quienes Somos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./hotel.html">Hotel</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./sostenibilidad.html">Sostenibilidad</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./contacto.html">Contacto</a>
+                </li>
+            </ul>
+        </div>
     </nav>
-    </header><br>
-    
-    <p> Disfruta de las mejores experiencias en nuestro hotel, podras disfrutar de una estadia unica con un servicio personalizado que les hará sentirse como en casa, en este paraíso tropical.
+    <!--navbar finaliza -->
+    <!--quienes somos inicia -->
+
+    <main>
+    <div class="container-fluid">
+        <h2 class="text-center">Quienes Somos</h2>
+    <p class="lead"> Disfruta de las mejores experiencias en nuestro hotel, podras disfrutar de una estadia unica con un servicio personalizado que les hará sentirse como en casa, en este paraíso tropical.
     </p>
-    
-    <a id="ancla" href=""enlace ancla></a>
-    <div class="somos">
-        <h1>Nosotros</h1></div><br>
-    <p class="enfasis">Hotel Kaira ubicados en el area del Parque Tayrona. Nuestros hotel tienen una perfecta ubicaciòn debido a que están integrados con la naturaleza a través de una arquitectura natural y sofisticada llena de encanto.
+    </div>
+    </main>
+
+    <!--quienes somos finaliza -->
+
+    <!--nosotros inicia -->
+    <section>
+    <div class="container-fluid"  class="somos">
+        <h2 class="text-center">Nosotros</h2> 
+    <p class="lead" class="enfasis">Hotel Kaira ubicados en el area del Parque Tayrona. Nuestros hotel tienen una perfecta ubicaciòn debido a que están integrados con la naturaleza a través de una arquitectura natural y sofisticada llena de encanto.
         Nuestros hotel son de pocas habitaciones porque buscamos una atención personalizada al cliente para hacerlos sentir como en casa. Nuestra vocación de atención al huésped es nuestro valor más importante. Intentamos brindar un plus con una comida de calidad, fresca y de cercanía.</p>
-        <br>
+    </div>
+    
         <div class="galeria-nosotros" data-aos="zoom-in">
             <div class="contenedor-nosotros">
                 <div class="contenedor contenedor1">Playa los naranjos</div>
@@ -45,40 +75,46 @@
                 <div class="contenedor contenedor4">San Juan</div>
                 <div class="contenedor contenedor5">Vista a la pileta</div>
                 <div class="contenedor contenedor6">hamaca</div>
-        
-    </div>
-
-
-    <div class="galeria-vision">
-        <h1>Nuestra Visión</h1></div>
-        <p class="enfasis">Pretendemos que los clientes nos recuerden como su mejor experiencia hotelera en Colombia.</p><br>
+        </div>
+        </div>
+        </section>
+    <!--nosotros finaliza -->
+    <!--nuestra vision inicia -->
+    <section>
+    <div class="container-fluid"class="galeria-vision">
+        <h2 class="text-center">Nuestra Visión</h2>
+        <p class="lead" class="enfasis">Pretendemos que los clientes nos recuerden como su mejor experiencia hotelera en Colombia.</p></div> 
         <div class="contenedor-vision" data-aos="zoom-in">
             <div class="vision vision1">sierra</div>
             <div class="ision vision2">hotel</div>
             <div class="ision vision3">vista completa</div>
-            <div class="ision vision4">cabaña</div>
+            <div class="ision vision4"></div>
         </div>
-        
-        <div class="enfasis">
-            <h1>Nuestra mision</h1></div>
-            <p class="enfasis">Queremos llegar a nuestro objetivo a través de 3 pilares:
+    </section>
+    <!--nuestra vision finaliza -->
+    <!--nuestra mision inicia -->
+            <section>
+            <div class="container-fluid"  class="enfasis">
+            <h2 class="text-center">Nuestra mision</h2>
+            <p class="lead" class="enfasis">Queremos llegar a nuestro objetivo a través de 3 pilares:
                 Instalaciones: La arquitectura de nuestros hoteles es moderna, sofisticada e integrada en la naturaleza, en lugares especiales por su alta belleza natural. 
-                Personal: Gran equipo humano, muy entrenado y seleccionado para hacer de perfectos anfitriones, a través de un servicio formal y cercano para conseguir que los clientes simplemente se sientan especiales.</p>
+                Personal: Gran equipo humano, muy entrenado y seleccionado para hacer de perfectos anfitriones, a través de un servicio formal y cercano para conseguir que los clientes simplemente se sientan especiales.</p></div>
                 <div class="contenedor-mision" data-aos="zoom-in-left">
-                    <div class="mision mision1">mision</div>
-                    <div class="mision mision2">mision</div>
-                    <div class="mision mision3">mision</div>
+                    <div class="mision mision1"></div>
+                    <div class="mision mision2"></div>
+                    <div class="mision mision3"></div>
                 </div>
-        <br>
+            </section>   
+    <!--nuestra mision finaliza -->    
     <footer>
         <h3 class="contacto">Reservas</h3>
     <h3 class="contacto">Santa Martha:(57 +605) 651 7477 </h3>
     <h3 class="contacto">Email: kairahotel@gmail.com</h3>
         <h2 class="final">Especialistas en viajes de aventura y vacaciones familiares en KAIRA Hotel</h2>
         <h2 class="final">Direcciòn: Magdalena,Santa Martha,Colombia</h2>
-        <p>Todos los derechos reservados por copyright</p>
+        <p class="fin">Todos los derechos reservados por copyright</p>
         <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
-        <a href="https://www.instagram.com/"></a><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
@@ -89,5 +125,8 @@
     new WOW().init();
     </script>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
 </body>
 </html>

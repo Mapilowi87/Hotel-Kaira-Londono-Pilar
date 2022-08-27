@@ -8,6 +8,7 @@
     <link rel="shortcut icon" href="../img/logo.jpg" type="image/x-icon">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/estilos.css">
     <style>
     
@@ -15,23 +16,42 @@
     <title>Hotel Kaira</title>
 </head>
 <body>
-        <header class="header-tres">
-            <div class="logo">Hotel <span>Kaira</span></div>
-                <nav class="barra">
-            <ul>
-                <li> <a href="../index.html">Home</a></li>
-                <li><a href="./quienes somos.html">Quienes Somos</a></li>
-                <li><a href="./hotel.html">Hotel</a></li>
-                <li><a href="./sostenibilidad.html">Sostenibilidad</a></li>
-                <li><a href="#">Contacto</a></li>
+        <!--navbar inicia -->
+    <nav class="navbar navbar-expand-lg navbar-dark hknav">
+        <!-- Brand -->
+        <a class="navbar-brand" href="#"><div class="logo">Hotel <span>Kaira</span></div>
+        </a>
+        <!-- Toggler/collapsibe Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Navbar links -->
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="../index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./quienes somos.html">Quienes Somos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./hotel.html">Hotel</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./sostenibilidad.html">Sostenibilidad</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contacto</a>
+                </li>
             </ul>
-        </nav>
-        </header>
+        </div>
+    </nav>
+    <!--navbar finaliza -->
 
 <section>
-    <h2 class="inicio">Contacto</h2>
+    <h1 class="offset-md-1" class="inicio">Contacto</h1>
 </section>
-<article>
+<article class="container-fluid">
     <form action="#" method="post" enctype="text/plain">
         <label for="Nombre">Nombre:</label>
         <input type="text"name=¨Nombre¨><br>
@@ -52,12 +72,8 @@
         <br>
         
         <input type="submit" value="enviando">
-        <input type="reset" value="borrar"><br>
-        
-        <h2 class="centrar">Elige tu temporada favorita</h2><br>
-        temporada Alta <input type="checkbox"><br>
-        temporada Media <input type="checkbox"><br>
-        temporada Baja <input type="checkbox"><br>
+        <input type="reset" value="borrar">
+        </article>
 
         <h2 class="centrar">¿Que tipo de servicio prefieres?</h2>
             <select name="Servicios" id="Servicios">
@@ -70,11 +86,11 @@
         <input type="checkbox"name= äcepta¨ value="4"></h2>
 </form><br>
 <footer>
-    <h2 class="final">Especialistas en viajes de aventura y vacaciones familiares en KAIRA Hotel</h2>
-        <h2 class="final">Direcciòn: Magdalena,Santa Martha,Colombia</h2>
-        <p>Todos los derechos reservados por copyright</p>
+    <h3 class="final">Especialistas en viajes de aventura y vacaciones familiares en KAIRA Hotel</h3>
+        <h3 class="final">Direcciòn: Magdalena,Santa Martha,Colombia</h3>
+        <p class="fin">Todos los derechos reservados por copyright</p>
         <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
-        <a href="https://www.instagram.com/"></a><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
     AOS.init();
@@ -85,5 +101,8 @@
 new WOW().init();
 </script>
 </footer>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
 </body>
 </html>

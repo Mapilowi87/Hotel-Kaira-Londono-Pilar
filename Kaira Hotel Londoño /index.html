@@ -1,95 +1,156 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-    <link rel="shortcut icon" href="../img/logo.jpg" type="image/x-icon">
-
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="./img/logo.jpg" type="image/x-icon">
     <link rel="stylesheet" href="css/animate.css">
-
-    <link rel="stylesheet" href="./css/estilos.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+        <link rel="stylesheet" href="./css/estilos.css">
     <style>
 
     </style>
-    
+
     <title>Hotel Kaira</title>
 </head>
+
 <body>
-<!--fila de logo +nav -->
-    <header class="header">
-        <div class="logo">Hotel <span>Kaira</span></div>
-            <nav class="barra">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="pages/quienes somos.html">Quienes Somos</a></li>
-                <li><a href="pages/hotel.html">Hotel</a></li>
-                <li><a href="pages/sostenibilidad.html">Sostenibilidad</a></li>
-                <li><a href="pages/contacto.html">contacto</a></li>   
+    <!--navbar inicia -->
+    <nav class="navbar navbar-expand-lg navbar-dark hknav">
+        <!-- Brand -->
+        <a class="navbar-brand" href="#"><div class="logo">Hotel <span>Kaira</span></div>
+        </a>
+        <!-- Toggler/collapsibe Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Navbar links -->
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./pages/quienes somos.html">Quienes Somos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./pages/hotel.html">Hotel</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./pages/sostenibilidad.html">Sostenibilidad</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./pages/contacto.html">Contacto</a>
+                </li>
             </ul>
-        </nav>
-    </header>
-    <main><br>
+        </div>
+    </nav>
+    <!--navbar finaliza -->
+    <!--jumbotron inicia -->
+    <div class="jumbotron" >
         <h1 class="caja-1">Bienvenidos a Kaira Hotel</h1><br>
-        <p class="call">Nuestro hotel tropical se encuentra junto a la playa y se eleva sobre la Sierra Nevada de Santa Martha. Disfrutando de un servicio personalizado y teniendo un descanso inolvidable.</p><br>
-    <div class="contenedor">
-        <div class="baul baul1">sierra</div>
-        <div class="baul baul2">hotel</div>
-        <div class="baul baul3">vista completa</div>
-        <div class="baul baul4">cabaña</div>
-    </div>
-    <div class="galeria">
-        <h2>Imagenes</h2>
-        <div class="contenedor-figura" data-aos="zoom-in">
-            <div class="figura figura1">Playa los naranjos</div>
-            <div class="figura figura2">zona de los cocos</div>
-            <div class="figura figura3">Atardecer</div>
-            <div class="figura figura4">San Juan</div>
-            <div class="figura figura5">Vista a la pileta</div>
-            <div class="figura figura6">hamaca</div>
+        <p class="lead" class="call">Nuestro hotel tropical se encuentra junto a la playa y se eleva sobre la Sierra
+            Nevada de Santa Martha. Disfrutando de un servicio personalizado y teniendo un descanso inolvidable.</p>
+            <div  class="reserve">
+                <h3 class="lead">¡Reserva Ahora!</h3>
+            </div>
+            <section class="search">
+                <div class="dates">
+                    <div class="dates_box">
+                        <label for="llegada">Llegada:</label>
+                        <input type="date" id="llegada" name="fecha_llegada" value="2022-08-13" min="2022-01-01" max="2022-12-31">
+                    </div>
+                    <div class="dates_box">
+                        <label for="salida">Salida:</label>
+                        <input type="date" id="salida" name="fecha_salida" value="2022-09-13" min="2022-01-01" max="2022-12-31">
+                    </div>
+                </div>
+                
+                <div class="room">
+                    <select name="servicio" id="servicios">
+                        <option value="Habitación">Habitación</option>
+                        <option value="Habitación Vista al Mar">Habitación Vista al Mar</option>
+                        <option value="Estandar">Habitación Estandar</option>
+                        <option value="Básica">Habitación Básica</option>
+                    </select>
+                </div>
+                <div class="search_button">
+                    <button class="s_button">Buscar</button>
+                </div>
+            </section>
+            <br>
     
-</div>
+    <!--jumbotron finaliza -->
 
+    <main class="container-fluid"><br>
+        <div class="contenedor">
+
+            <div class="baul baul1">sierra</div>
+            <div class="baul baul2">hotel</div>
+            <div class="baul baul3">vista completa</div>
+            <div class="baul baul4">Cabaña</div>
+        </div>
+        <div class="galeria">
+            <h2>Imagenes</h2>
+            <div class="contenedor-figura" data-aos="zoom-in">
+                <div class="figura figura1">Playa los naranjos</div>
+                <div class="figura figura2">zona de los cocos</div>
+                <div class="figura figura3">Atardecer</div>
+                <div class="figura figura4">San Juan</div>
+                <div class="figura figura5">Vista a la pileta</div>
+                <div class="figura figura6">hamaca</div>
+
+            </div>
     </main><br>
-    <article>
-        <table class="table" border="20" cellpadding="30"cellspacing=¨20¨>
-            <tr>
-                <th>Temporada Alta</th>
-                <th>Temporada Media</th>
-                <th>Temporada Baja</th>
-            </tr>
-            <tr>
-                <td>Diciembre a Enero</td>
-                <td>Abril a Octubre</td>
-                <td>Noviembre a Marzo</td>
-            </tr>
-    </table>
-    </article>
-
-    <h2 class="linea" data-aos="flip-left"
-    data-aos-easing="ease-out-cubic"
-    data-aos-duration="2000">Testimonios </h2> <br>
-    <img src="./img/Testimonio.png" alt="Testimonio" height="100px" width="100px"><br>
-    <div class="contenido" data-aos="fade-up"
-    data-aos-duration="3000">
-        <p>Fue una experiencia maravillosa, las instalaciones son muy lindas, las  comodidades, la comida deliciosa, el servicio de los empleados es muy bueno, están siempre dispuestos a consentir al huésped.</p>
+    <div>
+        <article class="table">
+            <table class="table" border="5" cellpadding="30" cellspacing=¨20¨>
+                <tr>
+                    <th>Temporada Alta</th>
+                    <th>Temporada Media</th>
+                    <th>Temporada Baja</th>
+                </tr>
+                <tr>
+                    <td>Diciembre a Enero</td>
+                    <td>Abril a Octubre</td>
+                    <td>Noviembre a Marzo</td>
+                </tr>
+            </table>
+        </article>
     </div>
-    <iframe class="contenido" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3912.386420456083!2d-74.06795015034486!3d11.306440891923744!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8ef48b22eaf45f4d%3A0x485723dccbdb882f!2sParque%20Nacional%20Natural%20Tayrona!5e0!3m2!1ses!2sar!4v1659761287216!5m2!1ses!2sar" width="200" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    <footer>
-        <h3 class="contacto">Reservas</h3>
-    <h3 class="contacto">Santa Martha:(57 +605) 651 7477 </h3>
-    <h3 class="contacto">Email: kairahotel@gmail.com</h3>
-        <h2 class="final">Especialistas en viajes de aventura y vacaciones familiares en KAIRA Hotel</h2>
-        <h2 class="final">Direcciòn: Magdalena,Santa Martha,Colombia</h2>
-        <p>Todos los derechos reservados por copyright</p>
+    <section class="container-fluid">
+        <h2 class="linea" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">Testimonios
+        </h2> <br>
+        <img src="./img/Testimonio.png" class="offset-md-5" alt="Testimonio" class="img-fluid" height="250px"
+            width="250px"><br>
+        <div class="contenido" data-aos="fade-up" data-aos-duration="3000">
+            <p class="lead">Fue una experiencia maravillosa, las instalaciones son muy lindas, las comodidades, la comida deliciosa, el servicio de los empleados es muy bueno, están siempre dispuestos a consentir al huésped.</p>
+        </div>
+
+
+        <iframe class="contenido"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3912.386420456083!2d-74.06795015034486!3d11.306440891923744!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8ef48b22eaf45f4d%3A0x485723dccbdb882f!2sParque%20Nacional%20Natural%20Tayrona!5e0!3m2!1ses!2sar!4v1659761287216!5m2!1ses!2sar"
+            width="200" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+    <footer class="container-fluid">
+        <h4 class="contacto">Reservas</h4>
+        <h4 class="contacto">Santa Martha:(57 +605) 651 7477 </h4>
+        <h4 class="contacto">Email: kairahotel@gmail.com</h4>
+        <h5 class="final">Especialistas en viajes de aventura y vacaciones familiares en KAIRA Hotel</h5>
+        <h5 class="final">Direcciòn: Magdalena,Santa Martha,Colombia</h5>
+        <p class="fin">Todos los derechos reservados por copyright</p>
         <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
-        <a href="https://www.instagram.com/"></a><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
     </footer>
-    <a href="#"class="subir">
+    <a href="#" class="subir">
         <i class="fa-solid fa-angle-up"></i>
     </a>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -99,7 +160,17 @@
 
     <script src="js/wow.min.js"></script>
     <script>
-    new WOW().init();
+        new WOW().init();
     </script>
-    </body>
-    </html>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+        integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
